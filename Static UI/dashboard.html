@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket App | Dashboard</title>
+    <link rel="stylesheet" href="./main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header class="app-header">
+            <div class="logo">TicketApp</div>
+            <nav class="main-nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="tickets.html" data-testid="tickets-link">Manage Tickets</a>
+                <button id="logout-button" class="btn btn-logout" data-testid="logout-button">
+                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                </button>
+            </nav>
+        </header>
+
+        <main class="dashboard-content">
+            <h1>Welcome to Your Dashboard</h1>
+            
+            <section class="stat-cards-grid">
+                
+                <div class="stat-card" data-testid="total-tickets-card">
+                    <div class="stat-icon"><i class="fa-solid fa-list-check"></i></div>
+                    <div class="stat-value" data-testid="total-tickets-value">0</div>
+                    <div class="stat-label">Total Tickets</div>
+                </div>
+
+                <div class="stat-card status-open" data-testid="open-tickets-card">
+                    <div class="stat-icon"><i class="fa-solid fa-unlock"></i></div>
+                    <div class="stat-value" data-testid="open-tickets-value">0</div>
+                    <div class="stat-label">Open Tickets</div>
+                </div>
+
+                <div class="stat-card status-progress" data-testid="in-progress-tickets-card">
+                    <div class="stat-icon"><i class="fa-solid fa-spinner"></i></div>
+                    <div class="stat-value" data-testid="in-progress-tickets-value">0</div>
+                    <div class="stat-label">In Progress</div>
+                </div>
+
+                <div class="stat-card status-closed" data-testid="resolved-tickets-card">
+                    <div class="stat-icon"><i class="fa-solid fa-check-double"></i></div>
+                    <div class="stat-value" data-testid="resolved-tickets-value">0</div>
+                    <div class="stat-label">Resolved Tickets</div>
+                </div>
+
+            </section>
+            
+            <section class="action-section">
+                <h2>Quick Actions</h2>
+                <div class="action-box card-box">
+                    <p>Ready to jump into the details? View, create, and manage all support requests.</p>
+                    <a href="tickets.html" class="btn btn-manage" data-testid="manage-tickets-button">
+                        <i class="fa-solid fa-gear"></i> Go to Ticket Management
+                    </a>
+                </div>
+                
+                <div class="decorative-circle top-right"></div>
+
+            </section>
+
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2025 Ticket Web App. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

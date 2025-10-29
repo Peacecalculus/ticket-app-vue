@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header class="header_wrapper">
+    <div class="logo_section">
+        <a href="#" class="logo">TicketApp</a>
+            <nav class="nav-links">
+                <a href="auth.html" class="nav-btn--push-right">Login</a>
+                <a href="auth.html" class="nav_btn">Get Started</a>
+            </nav>
+    </div>
+   </header>
+
+   <div class="top-wave-container">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height: 80px; width: 100%;">
+            <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" 
+                  style="fill: url(#gradient1);" />
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#6a11cb;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2575fc;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+   </div>
+
+   <main class="hero_section" container>
+        <div class="circle circle-1"></div>
+
+        <section class="hero-content">
+             <h1>Manage Your Support Tickets Seamlessly</h1>
+                <p>A simple, powerful, and unified system for tracking and resolving customer issues. All in one place.</p>
+                <div class="hero-cta">
+                    <a href="auth.html" class="cta cta_btn">Get Started for Free</a>
+                </div>
+        </section>
+
+        <div class="circle circle-2"></div>
+   </main>
+    
+   <div class="bottom-wave-container">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height: 80px; width: 100%;">
+            <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" 
+                  style="fill: #f9faff;" />
+        </svg>
+   </div>
+
+   <section class="feature_section container">
+        <h2>Everything you need. Nothing you don't.</h2>
+           <div class="feature-cards">
+                <div class="card">
+                    <h3><i class="fa-solid fa-spinner"></i> Robust Dashboard</h3>
+                    <p>Get a high-level overview of all your tickets. See total, open, and resolved issues at a glance.</p>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fa-solid fa-cruzeiro-sign"></i> Full CRUD</h3>
+                    <p>Create, Read, Update, and Delete tickets with a simple, intuitive interface and real-time validation.</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fa-solid fa-user-shield"></i> Secure Auth</h3>
+                    <p>Your data is protected. Secure login and signup with session management for all users.</p>
+                </div>
+           </div>
+    </section>
+
+    <footer class="container">
+        <div class="footer_content">
+            <p>&copy; 2025 TicketApp. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
